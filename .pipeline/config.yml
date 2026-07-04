@@ -1,0 +1,7 @@
+# SAP CI/CD (Project "Piper") 設定
+# CFデプロイの cf login に --origin を付与し、IAS(platform) の技術ユーザーで認証する。
+# 会社アカウントは SSO/MFA 必須で password grant 不可のため、
+# IAS ローカル技術ユーザー(origin key: alofsnyve-platform) を使う。
+steps:
+  cloudFoundryDeploy:
+    loginParameters: '--origin alofsnyve-platform'
