@@ -70,7 +70,7 @@ resources:
       service-plan: application
       path: ./xs-security.json
       config:
-        xsappname: lunch-vote-${org}-${space}
+        xsappname: lunch-vote-${space}
         tenant-mode: dedicated
         oauth2-configuration:
           credential-types:
