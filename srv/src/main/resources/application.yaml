@@ -6,6 +6,13 @@ spring:
 cds:
   data-source.auto-config.enabled: false
 ---
+# 本番(cloud)でもインデックスページ / Fiori プレビューを表示する
+spring:
+  config.activate.on-profile: cloud
+cds:
+  index-page:
+    enabled: true
+---
 management:
   endpoint:
     health:
